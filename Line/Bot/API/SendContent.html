@@ -1,0 +1,919 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Line::Bot::API::SendContent
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../';
+  framesUrl = "../../../frames.html#!Line/Bot/API/SendContent.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Line.html" title="Line (module)">Line</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Bot.html" title="Line::Bot (module)">Bot</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../API.html" title="Line::Bot::API (module)">API</a></span></span>
+     &raquo; 
+    <span class="title">SendContent</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: Line::Bot::API::SendContent
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+      <dt class="r1">Includes:</dt>
+      <dd class="r1"><span class='object_link'><a href="../Constants.html" title="Line::Bot::Constants (module)">Constants</a></span></dd>
+      
+    
+  
+  
+    <dt class="r2">Included in:</dt>
+    <dd class="r2"><span class='object_link'><a href="../API.html" title="Line::Bot::API (module)">Line::Bot::API</a></span></dd>
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/line/bot/api/send_content.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="../Constants.html" title="Line::Bot::Constants (module)">Constants</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Constants.html#POST_EVENT_API_CHANEL_ID-constant" title="Line::Bot::Constants::POST_EVENT_API_CHANEL_ID (constant)">Constants::POST_EVENT_API_CHANEL_ID</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_audio-instance_method" title="#send_audio (instance method)">- (Object) <strong>send_audio</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_image-instance_method" title="#send_image (instance method)">- (Object) <strong>send_image</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_location-instance_method" title="#send_location (instance method)">- (Object) <strong>send_location</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_sticker-instance_method" title="#send_sticker (instance method)">- (Object) <strong>send_sticker</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_text-instance_method" title="#send_text (instance method)">- (Object) <strong>send_text</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_video-instance_method" title="#send_video (instance method)">- (Object) <strong>send_video</strong>(mids, content_params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="send_audio-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_audio</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:originalContentUrl</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>URL of audio file. The “m4a” format is recommended.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:contentMetadata["AUDLEN"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Length of voice message. The unit is given in milliseconds.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_audio'>send_audio</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>AUDIO</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_image-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_image</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:originalContentUrl</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>URL of image. Only JPEG format supported. Image size cannot be larger than
+1024×1024.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:previewImageUrl</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>URL of thumbnail image. For preview. Only JPEG format supported. Image size
+cannot be larger than 240×240.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_image'>send_image</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>IMAGE</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_location-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_location</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:text</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>String used to explain the location information (example: name of
+restaurant, address).</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:location["title"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Assigned the same string as the text property.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:location["latitude"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Latitude.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:location["longitude"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Longitude.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_location'>send_location</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>LOCATION</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_sticker-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_sticker</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:contentMetadata["STKID"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>ID of the sticker.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:contentMetadata["STKPKGID"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Package ID of the sticker.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:contentMetadata["STKVER"]</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Optional. Version number of the sticker. If omitted, the latest version
+number is applied.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_sticker'>send_sticker</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>STICKER</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_text-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_text</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:text</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>String you want to send. Messages can contain up to 1024 characters.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_text'>send_text</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>TEXT</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_video-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_video</strong>(mids, content_params) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>content_params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:originalContentUrl</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>URL of the movie. The “mp4” format is recommended.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:previewImageUrl</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>URL of thumbnail image used as a preview.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/line/bot/api/send_content.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_video'>send_video</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_perform_sending_message_request'>perform_sending_message_request</span><span class='lparen'>(</span><span class='id identifier rubyid_mids'>mids</span><span class='comma'>,</span> <span class='const'>ContentType</span><span class='op'>::</span><span class='const'>VIDEO</span><span class='comma'>,</span> <span class='id identifier rubyid_content_params'>content_params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Apr 11 12:24:09 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

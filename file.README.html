@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.README.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<h1 id="label-Line%3A%3ABot">Line::Bot</h1>
+
+<p><a href="https://badge.fury.io/rb/line-bot"><img
+src="https://badge.fury.io/rb/line-bot.svg"></a></p>
+
+<p>A lightweight, flexible Ruby interface to the Line Bot API.</p>
+
+<h2 id="label-Installation">Installation</h2>
+
+<pre class="code ruby"><code class="ruby">$ gem install line-bot</code></pre>
+
+<h2 id="label-Usage">Usage</h2>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>line/bot/client</span><span class='tstring_end'>&#39;</span></span>
+
+<span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='const'>Line</span><span class='op'>::</span><span class='const'>Bot</span><span class='op'>::</span><span class='const'>Client</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_channel_id'>channel_id</span>     <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LINE_CHANNEL_ID</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_channel_secret'>channel_secret</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LINE_CHANNEL_SECRET</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_channel_mid'>channel_mid</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LINE_CHANNEL_MID</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span>
+
+<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_profiles'>get_profiles</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>uxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='comment'># =&gt; {
+</span><span class='comment'># :status=&gt;200,
+</span><span class='comment'># :body=&gt;{&quot;contacts&quot;=&gt;[{&quot;displayName&quot;=&gt;&quot;Aisaac&quot;, &quot;mid&quot;=&gt;&quot;uxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;, &quot;pictureUrl&quot;=&gt;&quot;&quot;,# &quot;statusMessage&quot;=&gt;&quot;&quot;}],
+</span><span class='comment'>#   &quot;count&quot;=&gt;1,
+</span><span class='comment'>#   &quot;display&quot;=&gt;1,
+</span><span class='comment'>#   &quot;pagingRequest&quot;=&gt;{&quot;start&quot;=&gt;1, &quot;display&quot;=&gt;1, &quot;sortBy&quot;=&gt;&quot;MID&quot;},
+</span><span class='comment'>#   &quot;start&quot;=&gt;1,
+</span><span class='comment'>#   &quot;total&quot;=&gt;1}
+</span><span class='comment'># }
+</span>
+<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_send_text'>send_text</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>uxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Hello, world!</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='comment'>#=&gt; {:status=&gt;200, :body=&gt;{&quot;failed&quot;=&gt;[], &quot;messageId&quot;=&gt;&quot;1460267791059&quot;, &quot;timestamp&quot;=&gt;1460267791059, &quot;version&quot;=&gt;1}}
+</span>
+<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_message_content'>get_message_content</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1460267791059</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='comment'># =&gt; {
+</span><span class='comment'># :status=&gt;200,
+</span><span class='comment'># :body=&gt; {&quot;result&quot;:[
+</span><span class='comment'>#     {
+</span><span class='comment'>#       &quot;content&quot;:{
+</span><span class='comment'>#         &quot;toType&quot;:1,
+</span><span class='comment'>#         ...
+</span></code></pre>
+
+<h2 id="label-Development">Development</h2>
+
+<h4 id="label-Setup">Setup</h4>
+
+<pre class="code ruby"><code class="ruby">$ bundle install --path vendor/bundle
+
+# Option 1
+$ cp .envrc.sample .envrc
+
+( update .envrc as your configs )
+
+$ direnv allow .
+
+# Option 2
+$ export LINE_CHANNEL_ID=xxxxxxx
+$ export LINE_CHANNEL_SECRET=xxxxxxx
+$ export LINE_CHANNEL_MID=xxxxxxx</code></pre>
+
+<h4 id="label-run+test">run test</h4>
+
+<pre class="code ruby"><code class="ruby">$ bundle exec test</code></pre>
+
+<h4 id="label-Try+it+in+console">Try it in console</h4>
+
+<pre class="code ruby"><code class="ruby">$ bin/console</code></pre>
+
+<h2 id="label-Contributing">Contributing</h2>
+
+<p>Bug reports and pull requests are welcome on GitHub at <a
+href="https://github.com/Ai-saac/line-bot">github.com/Ai-saac/line-bot</a>.</p>
+
+<p>I&#39;m open to any suggestions :) Please feel free to open issues!</p>
+
+<h2 id="label-License">License</h2>
+
+<p>The gem is available as open source under the terms of the <a
+href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Mon Apr 11 12:24:09 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>
